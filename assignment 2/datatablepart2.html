@@ -4,8 +4,23 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Planets data</title>
-   
+    <style>
+      /* --- Built-in CSS to fix the layout completely --- */
+      table {
+        border-collapse: collapse;
+        font-family: sans-serif;
+        font-size: 0.9rem;
+        letter-spacing: 1px;
+        width: 100%;
+        margin-top: 20px;
+      }
 
+      caption {
+        padding: 10px;
+        font-weight: bold;
+        font-style: italic;
+        text-align: left;
+      }
 
       th, td {
         border: 1px solid #999999;
@@ -30,7 +45,28 @@
     <table>
       <caption>Data about the planets of our solar system (Planetary facts taken from <a href="http://nssdc.gsfc.nasa.gov/planetary/factsheet/">Nasa's Planetary Fact Sheet - Metric</a>).</caption>
       
+      <colgroup>
+        <col span="1">
+        <col span="1">
+        <col class="column-border">
+        <col span="9">
+      </colgroup>
 
+      <thead>
+        <tr>
+          <th colspan="2"></th>
+          <th scope="col">Name</th>
+          <th scope="col">Mass (10<sup>24</sup>kg)</th>
+          <th scope="col">Diameter (km)</th>
+          <th scope="col">Density (kg/m<sup>3</sup>)</th>
+          <th scope="col">Gravity (m/s<sup>2</sup>)</th>
+          <th scope="col">Length of day (hours)</th>
+          <th scope="col">Distance from Sun (10<sup>6</sup>km)</th>
+          <th scope="col">Mean temperature (°C)</th>
+          <th scope="col">Number of moons</th>
+          <th scope="col">Notes</th>
+        </tr>
+      </thead>
 
       <tbody>
         <tr>
@@ -136,4 +172,22 @@
           <td></td>
         </tr>
 
+        <tr>
+          <th colspan="2" scope="rowgroup">Dwarf planets</th>
+          <th scope="row">Pluto</th>
+          <td>0.0146</td>
+          <td>2,370</td>
+          <td>2095</td>
+          <td>0.7</td>
+          <td>153.3</td>
+          <td>5906.4</td>
+          <td>-225</td>
+          <td>5</td>
+          <td>Declassified as a planet in 2006, but this remains controversial.</td>
+        </tr>
+      </tbody>
+    </table>
+
+  </body>
+</html>
 
