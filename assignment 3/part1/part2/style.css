@@ -1,0 +1,154 @@
+/* ==========================================================================
+   1. Google Fonts Import
+   ========================================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Bevan&family=IBM+Plex+Serif:ital,wght@0,400;0,700;1,400&display=swap');
+
+/* ==========================================================================
+   2. Core Structural Layout (Provided by MDN)
+   ========================================================================== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0 20px;
+  min-width: 980px;
+  max-width: 1400px;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 5fr 2fr 2fr;
+  gap: 40px;
+  padding: 20px 0;
+}
+
+header {
+  border-bottom: 5px solid #aa6666;
+}
+
+footer {
+  border-top: 5px solid #aa6666;
+}
+
+footer p {
+  text-align: center;
+}
+
+/* ==========================================================================
+   3. Typesetting & Typography Solutions
+   ========================================================================== */
+
+/* Global Body & Heading Fonts */
+html {
+  font-family: "IBM Plex Serif", serif;
+  font-size: 16px;
+}
+
+h1, h2 {
+  font-family: "Bevan", serif;
+}
+
+/* Headings Styling */
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  letter-spacing: 3px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 0; /* Removes bottom gap as requested */
+  letter-spacing: 1px;
+}
+
+/* Body and Lists spacing */
+p, li {
+  line-height: 1.6;
+  letter-spacing: 0.5px;
+}
+
+/* Advanced selector: Indents only the first paragraph directly following an H2 */
+section h2 + p {
+  text-indent: 2rem;
+}
+
+/* Custom List Bullets */
+ul, ol {
+  margin: 1rem 0;
+}
+
+ul {
+  list-style-type: square;
+}
+
+ol {
+  list-style-type: lower-roman;
+}
+
+/* ==========================================================================
+   4. Links & Interactive Elements
+   ========================================================================== */
+a {
+  outline: none; /* Removes default focus ring */
+}
+
+a:link, a:visited {
+  color: #aa6666;
+  text-decoration: underline;
+}
+
+a:focus, a:hover {
+  text-decoration: none;
+  color: #773333;
+}
+
+/* Handles external links by searching for 'http' in the href attribute */
+a[href*="http"] {
+  padding-right: 18px;
+  background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23aa6666' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'><path d='M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6'></path><polyline points='15 3 21 3 21 9'></polyline><line x1='10' y1='14' x2='21' y2='3'></line></svg>") no-repeat right center;
+  background-size: 13px 13px;
+}
+
+/* ==========================================================================
+   5. Vertical Right Sidebar Navigation Menu
+   ========================================================================== */
+nav ul {
+  padding-left: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+nav li {
+  margin-bottom: 1rem;
+}
+
+nav li a {
+  font-family: "Bevan", serif;
+  text-decoration: none;
+  display: block; /* Turns the entire rectangular box into a button hit-area */
+  width: 100%;
+  padding: 1rem 0;
+  text-transform: uppercase; /* Uppercases link text automatically */
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+  border: 1px solid #aa6666;
+  color: #aa6666;
+}
+
+/* Navigation button interaction overrides */
+nav li a:focus, 
+nav li a:hover {
+  color: #ffffff;
+  background-color: #aa6666;
+}
+
+nav li a:active {
+  color: #ffffff;
+  background-color: #552222;
+  border-color: #552222;
+}
