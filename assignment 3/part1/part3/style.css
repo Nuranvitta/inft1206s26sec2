@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  color: #333333;
+  margin: 0;
+  font: 1.2em / 1.6 sans-serif;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  border: 1px solid black;
+}
+
+.logo {
+  font-size: 200%;
+  padding: 50px 20px;
+  margin: 0 auto;
+  max-width: 980px;
+}
+
+/* 1. MAIN GRID: 2-column responsive layout */
+.grid {
+  margin: 0 auto;
+  max-width: 980px;
+  display: grid;
+  grid-template-columns: 3fr 1fr; /* Article is 3x wider than Aside */
+  gap: 20px; /* 20-pixel gap between the two columns */
+}
+
+/* 2. STICKY NAVIGATION BAR */
+nav {
+  background-color: black;
+  padding: 0.5em;
+  position: sticky; /* Sticks when it reaches the top */
+  top: 0;
+}
+
+/* 3. FLEXBOX NAVIGATION ITEMS */
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex; /* Displays list items in a row */
+  justify-content: space-around; /* Equal space between items, smaller space at ends */
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5em 1em;
+}
+
+/* 4. PHOTOGRAPHY GRID: 2 equal-sized columns */
+.photos {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal columns */
+  gap: 5px; /* 5-pixel gap between images */
+}
+
+/* 5. FLOATING FEATURE IMAGE */
+.feature {
+  width: 200px;
+  float: left; /* Wraps text around to the right and bottom */
+  margin: 8px 30px 20px 0; /* Suitable space around the image */
+}
