@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <!--
+  Name: Nuran Sanyuga Vittanachchi
+  File: index.html
+  Date: 31 July 2026
+  Silly story generator assignment HTML file with standard button style.
+  -->
+  <title>Silly story generator</title>
+  <style>
+    body {
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      width: 600px;
+      margin: 0 auto;
+    }
+
+    div {
+      margin-bottom: 20px;
+    }
+
+    label {
+      font-weight: bold;
+      display: inline-block;
+      width: 180px;
+    }
+
+    input[type="text"] {
+      font: 17px/1.5 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      width: 200px;
+    }
+
+    button {
+      font: 20px/1.5 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      cursor: pointer;
+    }
+
+    .story {
+      background: #ffcb00;
+      color: #333;
+      padding: 20px;
+      width: 100%;
+      box-sizing: border-box;
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.5;
+      visibility: hidden;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <label for="customname">Enter custom name:</label>
+    <input id="customname" type="text" placeholder="">
+  </div>
+
+  <div>
+    <label>Choose locale:</label>
+    <input id="us" type="radio" name="ukus" value="us" checked>
+    <label for="us" style="width: auto;">US</label>
+    <input id="uk" type="radio" name="ukus" value="uk">
+    <label for="uk" style="width: auto;">UK</label>
+  </div>
+
+  <div>
+    <button class="generate">Generate random story</button>
+  </div>
+
+  <p class="story"></p>
+
+  <script src="main.js"></script>
+</body>
+</html>
