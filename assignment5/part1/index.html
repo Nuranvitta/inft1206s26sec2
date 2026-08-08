@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--
+Name: Nuran Sanyuga Vittanachchi
+File: index.html
+Date: 07 August 2026
+Fixed accessibility troubleshooting page with clean semantics, labeled forms, accessible colors, and proper headings.
+-->
+  <meta charset="utf-8">
+  <title>The trouble with Bears - Wildlife Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="page-wrapper">
+    <header class="site-header">
+      <h1>Welcome to our wildlife website</h1>
+    </header>
+
+    <nav class="main-nav" aria-label="Main Navigation">
+      <ul class="nav-links">
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">OUR TEAM</a></li>
+        <li><a href="#">PROJECTS</a></li>
+        <li><a href="#">BLOG</a></li>
+      </ul>
+
+      <form action="#" method="get" class="search-form" role="search">
+        <label for="search-input" class="visually-hidden">Search query</label>
+        <input type="search" id="search-input" name="q" placeholder="Search query">
+        <button type="submit">Go!</button>
+      </form>
+    </nav>
+
+    <div class="layout-wrapper">
+      <main class="main-content">
+        <article>
+          <h2>The trouble with Bears</h2>
+          <p class="author">By Evan Wild</p>
+
+          <p>
+            Tall, lumbering, angry, dangerous. The real live bears of this world are proud, independent creatures, self-serving and always on the hunt for food. Nothing like the bears you see on TV, like Baloo from <em>The Jungle Book</em>.
+          </p>
+
+          <p>
+            So what are bears really like, and why does the world's media portray them with such a skewed vision? In this article we try to answer those questions, and give you a real insight into the life of the bear.
+          </p>
+
+          <h3>Types of bear</h3>
+
+          <p>
+            Bears come in two varieties &mdash; large and medium. You don't get small bears. If you have seen a small bear, then it was in fact probably a baby bear (cub) from another species.
+          </p>
+
+          <p>
+            Bears can also be classified in terms of their habitat &mdash; both large and medium bears are just as at home in urban areas as they are in the wild.
+          </p>
+        </article>
+      </main>
+
+      <aside class="sidebar" aria-label="Related Links">
+        <h2>Related</h2>
+        <ul>
+          <li><a href="#">The trouble with Bees</a></li>
+          <li><a href="#">The trouble with Otters</a></li>
+          <li><a href="#">The trouble with Penguins</a></li>
+          <li><a href="#">The trouble with Octopi</a></li>
+          <li><a href="#">The trouble with Lemurs</a></li>
+        </ul>
+      </aside>
+    </div>
+  </div>
+
+</body>
+</html>
